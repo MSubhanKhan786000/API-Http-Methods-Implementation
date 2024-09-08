@@ -1,4 +1,75 @@
-.App {
-  font-family: sans-serif;
+/* Container for the entire app */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Style for product items */
+.product-list {
+  flex: 1; /* This makes the product list take up all available space */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 220px;
   text-align: center;
+  padding: 10px;
+}
+
+img {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Pagination controls */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+span {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.page__no {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.page__no:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+span:first-of-type,
+span:last-of-type {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+span:first-of-type:hover,
+span:last-of-type:hover {
+  background-color: #f0f0f0;
+  border-radius: 50%;
 }
